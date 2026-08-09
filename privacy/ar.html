@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rectoly — سياسة الخصوصية</title>
+<style>
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5b5b63;
+    --accent: #2f6fed;
+    --card: #f4f5f7;
+    --border: #e2e3e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #f1f1f3;
+      --muted: #a3a3ab;
+      --accent: #6ea1ff;
+      --card: #1c1c1f;
+      --border: #2c2c31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin: 0 0 32px;
+    padding: 12px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.88rem;
+  }
+  .langs .label {
+    width: 100%;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+  .langs a[aria-current="page"] {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rectoly — سياسة الخصوصية</h1>
+  <p class="updated">آخر تحديث 9 أغسطس 2026</p>
+  <nav class="langs" aria-label="اللغات">
+  <div class="label">اللغات</div>
+  <a href="en.html">English</a>
+  <a href="ja.html">日本語</a>
+  <a href="de.html">Deutsch</a>
+  <a href="es.html">Español</a>
+  <a href="zh-Hans.html">中文（简体）</a>
+  <a href="zh-Hant.html">中文（繁體）</a>
+  <a href="fr.html">Français</a>
+  <a href="it.html">Italiano</a>
+  <a href="da.html">Dansk</a>
+  <a href="ko.html">한국어</a>
+  <a href="pt-BR.html">Português (Brasil)</a>
+  <a href="nl.html">Nederlands</a>
+  <a href="sv.html">Svenska</a>
+  <a href="nb.html">Norsk Bokmål</a>
+  <a href="pl.html">Polski</a>
+  <a href="ru.html">Русский</a>
+  <a href="ar.html" aria-current="page">العربية</a>
+  <a href="tr.html">Türkçe</a>
+  <a href="hi.html">हिन्दी</a>
+  <a href="id.html">Bahasa Indonesia</a>
+</nav>
+
+  <p>
+    تطوّر Hawk Eye («نحن») تطبيق Rectoly لأجهزة iPad لقراءة ملفات PDF الأكاديمية والتعليق عليها ومزامنتها مع Mendeley Reference Manager. توضح هذه السياسة المعلومات التي يجمعها Rectoly ولماذا وكيف يتم التعامل معها.
+  </p>
+
+  <h2>المعلومات التي نجمعها</h2>
+
+  <p><strong>اتصال حساب Mendeley الخاص بك.</strong> عند تسجيل الدخول باستخدام Mendeley، يطلب Rectoly رمز وصول OAuth لقراءة مكتبتك ومستنداتك وتعليقاتك ومزامنتها. يُخزَّن هذا الرمز في Keychain على جهازك ولا يُرسَل أبدًا إلى خوادمنا — يتواصل Rectoly مباشرة مع واجهة برمجة التطبيقات الخاصة بـ Mendeley.</p>
+
+  <p><strong>مستنداتك وتعليقاتك.</strong> تُخزَّن ملفات PDF التي تفتحها، إلى جانب التمييز والتسطير والملاحظات اللاصقة وأي حبر مكتوب بخط اليد تضيفه، على جهازك. إذا فعّلت النسخ الاحتياطي عبر iCloud، تُنسَخ هذه البيانات — وإذا وافقت بشكل منفصل، خطك اليدوي — إلى حساب iCloud الخاص بك عبر CloudKit من Apple. ليس لدينا حق الوصول إلى هذه البيانات؛ فهي مشفّرة ومقيّدة بمعرّف Apple ID الخاص بك.</p>
+
+  <p><strong>تقارير الأعطال والأخطاء.</strong> يستخدم Rectoly خدمة Sentry للإبلاغ تلقائيًا عن الأعطال والأخطاء حتى نتمكّن من إصلاح الأخطاء. تُعدَّ هذه التقارير لاستبعاد المعلومات الشخصية: لا يُجمع معرّف مستخدم افتراضي ولا عنوان IP، وتُزال عناوين المستندات ومسارات الملفات وعناوين البريد الإلكتروني ورموز المصادقة ونص التعليقات قبل إرسال التقرير.</p>
+
+  <p><strong>تحليلات الاستخدام مجهولة الهوية.</strong> يستخدم Rectoly خدمة TelemetryDeck لجمع إشارات استخدام مجهولة ومجمّعة — على سبيل المثال، الشاشات التي تُفتح، وما إذا اكتملت عملية التعريف، أو ما إذا نجحت المزامنة أو فشلت (كفئة سبب عامة وليس كنص خطأ خام). لا تتضمن هذه الإشارات أبدًا عناوين المستندات أو مسارات الملفات أو عناوين البريد الإلكتروني أو محتوى التعليقات، ولا ترتبط بهويتك.</p>
+
+  <p><strong>المشتريات.</strong> تتم معالجة الاشتراكات والمشتريات لمرة واحدة بالكامل بواسطة Apple عبر StoreKit. نتلقّى تأكيدًا بإتمام عملية شراء؛ ولا يجمع Rectoly بيانات الدفع الخاصة بك ولا يخزّنها. تخضع تلك البيانات لسياسة خصوصية Apple الخاصة.</p>
+
+  <h2>ما لا نفعله</h2>
+  <ul>
+    <li>نحن لا نبيع بياناتك.</li>
+    <li>نحن لا نشغّل إعلانات ولا مجموعات تطوير برمجيات لتتبع الإعلانات.</li>
+    <li>نحن لا نقرأ بأنفسنا محتوى مستنداتك أو تعليقاتك — فهي تبقى على جهازك، وإذا فعّلت ذلك، في حساب iCloud الخاص بك.</li>
+  </ul>
+
+  <h2>خدمات الطرف الثالث</h2>
+  <ul>
+    <li><strong>Mendeley (Elsevier)</strong> — مكتبة مراجعك ومزامنة المستندات</li>
+    <li><strong>Apple iCloud / CloudKit</strong> — نسخ احتياطي اختياري يخضع لمعرّف Apple ID الخاص بك</li>
+    <li><strong>Sentry</strong> — الإبلاغ عن الأعطال والأخطاء</li>
+    <li><strong>TelemetryDeck</strong> — تحليلات المنتج مجهولة الهوية</li>
+    <li><strong>Apple StoreKit</strong> — المشتريات والاشتراكات</li>
+  </ul>
+  <p>تعمل كل من هذه الخدمات بموجب سياسة خصوصيتها الخاصة، ونشجّعك على مراجعتها.</p>
+
+  <h2>الاحتفاظ بالبيانات وحذفها</h2>
+  <p>
+    تبقى مستنداتك وتعليقاتك وخطك اليدوي على جهازك حتى تحذفها أو تحذف التطبيق. إذا كان النسخ الاحتياطي عبر iCloud مفعّلًا، يمكنك إيقافه من إعدادات Rectoly، أو إزالة بيانات iCloud الخاصة بالتطبيق من تطبيق الإعدادات على جهازك. يؤدي قطع اتصال حساب Mendeley إلى إزالة رمز الوصول المخزَّن محليًا فورًا.
+  </p>
+
+  <h2>خصوصية الأطفال</h2>
+  <p>لا يستهدف Rectoly الأطفال دون سن 13 عامًا، ولا نجمع معلومات منهم عن علم.</p>
+
+  <h2>التغييرات على هذه السياسة</h2>
+  <p>قد نحدّث هذه السياسة مع تغيّر التطبيق. ستنعكس التغييرات الجوهرية هنا مع تاريخ محدّث.</p>
+
+  <h2>التواصل</h2>
+  <p>أسئلة حول هذه السياسة: <a href="mailto:system.takemura@gmail.com">system.takemura@gmail.com</a></p>
+
+  <footer>طُوِّر Rectoly بواسطة Hawk Eye.</footer>
+</main>
+</body>
+</html>

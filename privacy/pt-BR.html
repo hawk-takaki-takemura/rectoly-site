@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rectoly — Política de Privacidade</title>
+<style>
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5b5b63;
+    --accent: #2f6fed;
+    --card: #f4f5f7;
+    --border: #e2e3e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #f1f1f3;
+      --muted: #a3a3ab;
+      --accent: #6ea1ff;
+      --card: #1c1c1f;
+      --border: #2c2c31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin: 0 0 32px;
+    padding: 12px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.88rem;
+  }
+  .langs .label {
+    width: 100%;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+  .langs a[aria-current="page"] {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rectoly — Política de Privacidade</h1>
+  <p class="updated">Última atualização em 9 de agosto de 2026</p>
+  <nav class="langs" aria-label="Idiomas">
+  <div class="label">Idiomas</div>
+  <a href="en.html">English</a>
+  <a href="ja.html">日本語</a>
+  <a href="de.html">Deutsch</a>
+  <a href="es.html">Español</a>
+  <a href="zh-Hans.html">中文（简体）</a>
+  <a href="zh-Hant.html">中文（繁體）</a>
+  <a href="fr.html">Français</a>
+  <a href="it.html">Italiano</a>
+  <a href="da.html">Dansk</a>
+  <a href="ko.html">한국어</a>
+  <a href="pt-BR.html" aria-current="page">Português (Brasil)</a>
+  <a href="nl.html">Nederlands</a>
+  <a href="sv.html">Svenska</a>
+  <a href="nb.html">Norsk Bokmål</a>
+  <a href="pl.html">Polski</a>
+  <a href="ru.html">Русский</a>
+  <a href="ar.html">العربية</a>
+  <a href="tr.html">Türkçe</a>
+  <a href="hi.html">हिन्दी</a>
+  <a href="id.html">Bahasa Indonesia</a>
+</nav>
+
+  <p>
+    A Hawk Eye (&quot;nós&quot;) desenvolve o Rectoly, um app para iPad para ler, anotar e sincronizar PDFs acadêmicos com o Mendeley Reference Manager. Esta política explica quais informações o Rectoly coleta, por quê e como elas são tratadas.
+  </p>
+
+  <h2>Informações que coletamos</h2>
+
+  <p><strong>A conexão da sua conta Mendeley.</strong> Ao entrar com o Mendeley, o Rectoly solicita um token de acesso OAuth para ler e sincronizar sua biblioteca, documentos e anotações. Esse token é armazenado no Keychain do seu dispositivo e nunca é enviado aos nossos servidores — o Rectoly se comunica diretamente com a API do próprio Mendeley.</p>
+
+  <p><strong>Seus documentos e anotações.</strong> Os PDFs que você abre, juntamente com destaques, sublinhados, notas adesivas e qualquer tinta manuscrita que adicionar, são armazenados no seu dispositivo. Se você ativar o backup do iCloud, esses dados — e, se optar separadamente, sua escrita à mão — são salvos na sua própria conta iCloud via CloudKit da Apple. Não temos acesso a esses dados; eles são criptografados e vinculados ao seu Apple ID.</p>
+
+  <p><strong>Relatórios de falhas e erros.</strong> O Rectoly usa o Sentry para relatar automaticamente falhas e erros, para que possamos corrigir bugs. Esses relatórios são configurados para excluir informações pessoais: nenhum identificador de usuário padrão nem endereço IP é coletado, e títulos de documentos, caminhos de arquivo, endereços de e-mail, tokens de autenticação e texto de anotações são removidos antes do envio de um relatório.</p>
+
+  <p><strong>Análises de uso anônimas.</strong> O Rectoly usa o TelemetryDeck para coletar sinais de uso anônimos e agregados — por exemplo, quais telas são abertas, se a introdução foi concluída ou se uma sincronização teve êxito ou falhou (como categoria geral de motivo, não como texto bruto de erro). Esses sinais nunca incluem títulos de documentos, caminhos de arquivo, endereços de e-mail ou conteúdo de anotações, e não estão vinculados à sua identidade.</p>
+
+  <p><strong>Compras.</strong> Assinaturas e compras únicas são tratadas inteiramente pela Apple por meio do StoreKit. Recebemos a confirmação de que uma compra foi feita; o Rectoly não coleta nem armazena seus dados de pagamento. A própria política de privacidade da Apple rege esses dados.</p>
+
+  <h2>O que não fazemos</h2>
+  <ul>
+    <li>Não vendemos seus dados.</li>
+    <li>Não executamos publicidade nem SDKs de rastreamento de anúncios.</li>
+    <li>Não lemos nós mesmos o conteúdo dos seus documentos ou anotações — eles permanecem no seu dispositivo e, se você ativar, na sua própria conta iCloud.</li>
+  </ul>
+
+  <h2>Serviços de terceiros</h2>
+  <ul>
+    <li><strong>Mendeley (Elsevier)</strong> — sua biblioteca de referências e sincronização de documentos</li>
+    <li><strong>Apple iCloud / CloudKit</strong> — backup opcional, regido pelo seu Apple ID</li>
+    <li><strong>Sentry</strong> — relatórios de falhas e erros</li>
+    <li><strong>TelemetryDeck</strong> — análises anônimas do produto</li>
+    <li><strong>Apple StoreKit</strong> — compras e assinaturas</li>
+  </ul>
+  <p>Cada um deles opera sob sua própria política de privacidade, que recomendamos que você revise.</p>
+
+  <h2>Retenção e exclusão de dados</h2>
+  <p>
+    Seus documentos, anotações e escrita à mão permanecem no seu dispositivo até que você os exclua ou exclua o app. Se o backup do iCloud estiver ativado, você pode desativá-lo nas configurações do Rectoly ou remover os dados do iCloud do app no app Ajustes do dispositivo. Desconectar sua conta Mendeley remove imediatamente o token de acesso armazenado localmente.
+  </p>
+
+  <h2>Privacidade de crianças</h2>
+  <p>O Rectoly não é direcionado a crianças menores de 13 anos, e não coletamos intencionalmente informações delas.</p>
+
+  <h2>Alterações nesta política</h2>
+  <p>Podemos atualizar esta política conforme o app muda. Alterações materiais serão refletidas aqui com uma data atualizada.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre esta política: <a href="mailto:system.takemura@gmail.com">system.takemura@gmail.com</a></p>
+
+  <footer>O Rectoly é desenvolvido pela Hawk Eye.</footer>
+</main>
+</body>
+</html>
