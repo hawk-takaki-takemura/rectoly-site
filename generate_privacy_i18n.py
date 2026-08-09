@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
-"""Generate localized Privacy Policy HTML pages from privacy_i18n.py."""
+"""Generate localized Privacy Policy HTML pages from privacy_i18n.py.
+
+Uses flat filenames (privacy-ja.html, …) because GitHub Pages cannot reliably
+serve both privacy.html and a privacy/ directory at the same time.
+"""
 
 from __future__ import annotations
 
 import html
+import shutil
 from pathlib import Path
 
 from privacy_i18n import LOCALES, TRANSLATIONS
 
 ROOT = Path(__file__).resolve().parent
-OUT_DIR = ROOT / "privacy"
 EMAIL = "system.takemura@gmail.com"
+LEGACY_DIR = ROOT / "privacy"
 
 CSS = """
   :root {
@@ -86,10 +91,14 @@ def esc(s: str) -> str:
     return html.escape(s, quote=True)
 
 
-def lang_switcher(current: str, prefix: str, languages_label: str) -> str:
+def page_name(code: str) -> str:
+    return f"privacy-{code}.html"
+
+
+def lang_switcher(current: str, languages_label: str) -> str:
     links = []
     for code, name, _dir in LOCALES:
-        href = f"{prefix}{code}.html"
+        href = page_name(code)
         label = esc(name)
         if code == current:
             links.append(f'<a href="{esc(href)}" aria-current="page">{label}</a>')
@@ -105,10 +114,9 @@ def lang_switcher(current: str, prefix: str, languages_label: str) -> str:
     )
 
 
-def render(code: str, name: str, direction: str, *, root_en: bool = False) -> str:
+def render(code: str, direction: str) -> str:
     t = TRANSLATIONS[code]
-    prefix = "privacy/" if root_en else ""
-    switcher = lang_switcher(code, prefix, t["languages_label"])
+    switcher = lang_switcher(code, t["languages_label"])
     contact = (
         f'{esc(t["contact_before"])} '
         f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
@@ -184,17 +192,20 @@ def render(code: str, name: str, direction: str, *, root_en: bool = False) -> st
 
 
 def main() -> None:
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    for code, name, direction in LOCALES:
-        path = OUT_DIR / f"{code}.html"
-        path.write_text(render(code, name, direction), encoding="utf-8")
-        print(f"wrote {path.relative_to(ROOT)}")
+    # Remove legacy privacy/ directory that conflicts with privacy.html on Pages
+    if LEGACY_DIR.exists():
+        shutil.rmtree(LEGACY_DIR)
+        print("removed privacy/")
 
-    # Canonical App Store URL: /privacy.html (English + language switcher)
-    en_name = next(n for c, n, _ in LOCALES if c == "en")
-    root = ROOT / "privacy.html"
-    root.write_text(render("en", en_name, "ltr", root_en=True), encoding="utf-8")
-    print(f"wrote {root.relative_to(ROOT)}")
+    for code, _name, direction in LOCALES:
+        path = ROOT / page_name(code)
+        path.write_text(render(code, direction), encoding="utf-8")
+        print(f"wrote {path.name}")
+
+    # Canonical App Store URL stays /privacy.html (English)
+    en = render("en", "ltr")
+    (ROOT / "privacy.html").write_text(en, encoding="utf-8")
+    print("wrote privacy.html")
 
 
 if __name__ == "__main__":
