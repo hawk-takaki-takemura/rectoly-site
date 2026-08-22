@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pl" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rectoly — Polityka prywatności</title>
+<style>
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5b5b63;
+    --accent: #2f6fed;
+    --card: #f4f5f7;
+    --border: #e2e3e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #f1f1f3;
+      --muted: #a3a3ab;
+      --accent: #6ea1ff;
+      --card: #1c1c1f;
+      --border: #2c2c31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin: 0 0 32px;
+    padding: 12px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.88rem;
+  }
+  .langs .label {
+    width: 100%;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+  .langs a[aria-current="page"] {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rectoly — Polityka prywatności</h1>
+  <p class="updated">Ostatnia aktualizacja: 19 sierpnia 2026</p>
+  <nav class="langs" aria-label="Języki">
+  <div class="label">Języki</div>
+  <a href="privacy-en.html">English</a>
+  <a href="privacy-ja.html">日本語</a>
+  <a href="privacy-de.html">Deutsch</a>
+  <a href="privacy-es.html">Español</a>
+  <a href="privacy-zh-Hans.html">中文（简体）</a>
+  <a href="privacy-zh-Hant.html">中文（繁體）</a>
+  <a href="privacy-fr.html">Français</a>
+  <a href="privacy-it.html">Italiano</a>
+  <a href="privacy-da.html">Dansk</a>
+  <a href="privacy-ko.html">한국어</a>
+  <a href="privacy-pt-BR.html">Português (Brasil)</a>
+  <a href="privacy-nl.html">Nederlands</a>
+  <a href="privacy-sv.html">Svenska</a>
+  <a href="privacy-nb.html">Norsk Bokmål</a>
+  <a href="privacy-pl.html" aria-current="page">Polski</a>
+  <a href="privacy-ru.html">Русский</a>
+  <a href="privacy-ar.html">العربية</a>
+  <a href="privacy-tr.html">Türkçe</a>
+  <a href="privacy-hi.html">हिन्दी</a>
+  <a href="privacy-id.html">Bahasa Indonesia</a>
+</nav>
+
+  <p>
+    Hawk Eye („my&quot;) rozwija Rectoly — aplikację na iPada do czytania, annotowania i synchronizowania akademickich plików PDF z menedżerami referencji, takimi jak Mendeley Reference Manager i Zotero. Niniejsza polityka wyjaśnia, jakie informacje zbiera Rectoly, dlaczego i w jaki sposób są one przetwarzane.
+  </p>
+
+  <h2>Informacje, które zbieramy</h2>
+
+  <p><strong>Połączenie z kontem Mendeley.</strong> Gdy logujesz się przez Mendeley, Rectoly prosi o token dostępu OAuth, aby odczytywać i synchronizować Twoją bibliotekę, dokumenty i adnotacje. Token jest przechowywany w Keychain na Twoim urządzeniu i nigdy nie jest wysyłany na nasze serwery — Rectoly komunikuje się bezpośrednio z API Mendeley.</p>
+
+  <p><strong>Połączenie z kontem Zotero.</strong> Gdy logujesz się przez Zotero, Rectoly prosi o klucz API Zotero, aby odczytywać i synchronizować Twoją bibliotekę, dokumenty i adnotacje. Klucz jest przechowywany w Keychain na Twoim urządzeniu i nigdy nie jest wysyłany na nasze serwery — Rectoly komunikuje się bezpośrednio z API Zotero.</p>
+
+  <p><strong>Twoje dokumenty i adnotacje.</strong> Otwierane pliki PDF wraz z wyróżnieniami, podkreśleniami, karteczkami i odręcznym atramentem są przechowywane na Twoim urządzeniu. Jeśli włączysz kopię zapasową iCloud, te dane — oraz, jeśli osobno wyrazisz zgodę, Twój odręczny zapis — są kopiowane na Twoje własne konto iCloud przez CloudKit firmy Apple. Nie mamy dostępu do tych danych; są one szyfrowane i powiązane z Twoim Apple ID.</p>
+
+  <p><strong>Raporty o awariach i błędach.</strong> Rectoly korzysta z Sentry, aby automatycznie zgłaszać awarie i błędy, dzięki czemu możemy naprawiać usterki. Raporty te są skonfigurowane tak, aby wykluczać dane osobowe: nie jest zbierany domyślny identyfikator użytkownika ani adres IP, a tytuły dokumentów, ścieżki plików, adresy e-mail, tokeny uwierzytelniania i tekst adnotacji są usuwane przed wysłaniem raportu.</p>
+
+  <p><strong>Anonimowa analityka użycia.</strong> Rectoly korzysta z TelemetryDeck, aby zbierać anonimowe, zagregowane sygnały użycia — na przykład, które ekrany są otwierane, czy ukończono wprowadzenie, albo czy synchronizacja zakończyła się powodzeniem czy niepowodzeniem (jako ogólna kategoria przyczyny, a nie surowy tekst błędu). Sygnały te nigdy nie obejmują tytułów dokumentów, ścieżek plików, adresów e-mail ani treści adnotacji i nie są powiązane z Twoją tożsamością.</p>
+
+  <p><strong>Zakupy.</strong> Subskrypcje i zakupy jednorazowe są w całości obsługiwane przez Apple za pośrednictwem StoreKit. Otrzymujemy potwierdzenie dokonania zakupu; Rectoly nie zbiera ani nie przechowuje danych płatniczych. Te dane podlegają własnej polityce prywatności Apple.</p>
+
+  <h2>Czego nie robimy</h2>
+  <ul>
+    <li>Nie sprzedajemy Twoich danych.</li>
+    <li>Nie uruchamiamy reklam ani SDK do śledzenia reklam.</li>
+    <li>Nie czytamy sami treści Twoich dokumentów ani adnotacji — pozostają one na Twoim urządzeniu, a jeśli włączysz tę opcję, na Twoim własnym koncie iCloud.</li>
+  </ul>
+
+  <h2>Usługi stron trzecich</h2>
+  <ul>
+    <li><strong>Mendeley (Elsevier)</strong> — Twoja biblioteka referencyjna i synchronizacja dokumentów</li>
+    <li><strong>Zotero (Corporation for Digital Scholarship)</strong> — Twoja biblioteka referencyjna i synchronizacja dokumentów</li>
+    <li><strong>Apple iCloud / CloudKit</strong> — opcjonalna kopia zapasowa, zarządzana przez Twoje Apple ID</li>
+    <li><strong>Sentry</strong> — zgłaszanie awarii i błędów</li>
+    <li><strong>TelemetryDeck</strong> — anonimowa analityka produktu</li>
+    <li><strong>Apple StoreKit</strong> — zakupy i subskrypcje</li>
+  </ul>
+  <p>Każda z tych usług działa zgodnie z własną polityką prywatności, którą zachęcamy Cię do przejrzenia.</p>
+
+  <h2>Przechowywanie i usuwanie danych</h2>
+  <p>
+    Twoje dokumenty, adnotacje i odręczny zapis pozostają na urządzeniu, dopóki ich nie usuniesz lub nie usuniesz aplikacji. Jeśli kopia zapasowa iCloud jest włączona, możesz ją wyłączyć w ustawieniach Rectoly lub usunąć dane iCloud aplikacji w aplikacji Ustawienia na urządzeniu. Odłączenie konta Mendeley lub Zotero natychmiast usuwa lokalnie przechowywany token dostępu lub klucz API.
+  </p>
+
+  <h2>Prywatność dzieci</h2>
+  <p>Rectoly nie jest skierowany do dzieci poniżej 13. roku życia i świadomie nie zbieramy od nich informacji.</p>
+
+  <h2>Zmiany w niniejszej polityce</h2>
+  <p>Możemy aktualizować tę politykę w miarę zmian w aplikacji. Istotne zmiany zostaną odzwierciedlone tutaj wraz z zaktualizowaną datą.</p>
+
+  <h2>Kontakt</h2>
+  <p>Pytania dotyczące tej polityki: <a href="mailto:rectoly.app@gmail.com">rectoly.app@gmail.com</a></p>
+
+  <footer>Rectoly jest rozwijany przez Hawk Eye.</footer>
+</main>
+</body>
+</html>

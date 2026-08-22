@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rectoly — 隐私政策</title>
+<style>
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5b5b63;
+    --accent: #2f6fed;
+    --card: #f4f5f7;
+    --border: #e2e3e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #f1f1f3;
+      --muted: #a3a3ab;
+      --accent: #6ea1ff;
+      --card: #1c1c1f;
+      --border: #2c2c31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin: 0 0 32px;
+    padding: 12px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.88rem;
+  }
+  .langs .label {
+    width: 100%;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+  .langs a[aria-current="page"] {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rectoly — 隐私政策</h1>
+  <p class="updated">最后更新于 2026 年 8 月 19 日</p>
+  <nav class="langs" aria-label="语言">
+  <div class="label">语言</div>
+  <a href="privacy-en.html">English</a>
+  <a href="privacy-ja.html">日本語</a>
+  <a href="privacy-de.html">Deutsch</a>
+  <a href="privacy-es.html">Español</a>
+  <a href="privacy-zh-Hans.html" aria-current="page">中文（简体）</a>
+  <a href="privacy-zh-Hant.html">中文（繁體）</a>
+  <a href="privacy-fr.html">Français</a>
+  <a href="privacy-it.html">Italiano</a>
+  <a href="privacy-da.html">Dansk</a>
+  <a href="privacy-ko.html">한국어</a>
+  <a href="privacy-pt-BR.html">Português (Brasil)</a>
+  <a href="privacy-nl.html">Nederlands</a>
+  <a href="privacy-sv.html">Svenska</a>
+  <a href="privacy-nb.html">Norsk Bokmål</a>
+  <a href="privacy-pl.html">Polski</a>
+  <a href="privacy-ru.html">Русский</a>
+  <a href="privacy-ar.html">العربية</a>
+  <a href="privacy-tr.html">Türkçe</a>
+  <a href="privacy-hi.html">हिन्दी</a>
+  <a href="privacy-id.html">Bahasa Indonesia</a>
+</nav>
+
+  <p>
+    Hawk Eye（以下简称&quot;我们&quot;）开发了 Rectoly，这是一款用于阅读、批注学术 PDF，并与 Mendeley Reference Manager 和 Zotero 等文献管理工具同步的 iPad 应用。本政策说明 Rectoly 收集哪些信息、为何收集以及如何处理。
+  </p>
+
+  <h2>我们收集的信息</h2>
+
+  <p><strong>您的 Mendeley 账户连接。</strong> 当您使用 Mendeley 登录时，Rectoly 会请求 OAuth 访问令牌，以读取并同步您的文献库、文档和批注。该令牌保存在设备的 Keychain 中，绝不会发送到我们的服务器——Rectoly 直接与 Mendeley 自身的 API 通信。</p>
+
+  <p><strong>您的 Zotero 账户连接。</strong> 当您使用 Zotero 登录时，Rectoly 会请求 Zotero API 密钥，以读取并同步您的文献库、文档和批注。该密钥保存在设备的 Keychain 中，绝不会发送到我们的服务器——Rectoly 直接与 Zotero 自身的 API 通信。</p>
+
+  <p><strong>您的文档与批注。</strong> 您打开的 PDF，以及高亮、下划线、便签和您添加的任何手写墨迹，均存储在您的设备上。如果启用 iCloud 备份，这些数据——以及在您另行选择加入时的手写内容——会通过 Apple 的 CloudKit 备份到您自己的 iCloud 账户。我们无法访问这些数据；它们经过加密，并限定在您的 Apple ID 范围内。</p>
+
+  <p><strong>崩溃与错误报告。</strong> Rectoly 使用 Sentry 自动报告崩溃和错误，以便我们修复缺陷。这些报告经配置会排除个人信息：不收集默认用户标识符或 IP 地址，并且在发送报告前会剥离文档标题、文件路径、电子邮件地址、身份验证令牌和批注文本。</p>
+
+  <p><strong>匿名使用分析。</strong> Rectoly 使用 TelemetryDeck 收集匿名、汇总的使用信号——例如打开了哪些屏幕、是否完成新手引导，或同步成功还是失败（作为一般原因类别，而非原始错误文本）。这些信号绝不包含文档标题、文件路径、电子邮件地址或批注内容，也不与您的身份关联。</p>
+
+  <p><strong>购买。</strong> 订阅和一次性购买完全由 Apple 通过 StoreKit 处理。我们仅收到购买已完成的确认；Rectoly 不会收集或存储您的付款详情。该数据受 Apple 自身隐私政策约束。</p>
+
+  <h2>我们不会做的事</h2>
+  <ul>
+    <li>我们不会出售您的数据。</li>
+    <li>我们不会运行广告或广告追踪 SDK。</li>
+    <li>我们不会自行阅读您的文档或批注内容——它们保留在您的设备上，若您启用备份，则保留在您自己的 iCloud 账户中。</li>
+  </ul>
+
+  <h2>第三方服务</h2>
+  <ul>
+    <li><strong>Mendeley (Elsevier)</strong> — 您的参考文献库与文档同步</li>
+    <li><strong>Zotero (Corporation for Digital Scholarship)</strong> — 您的参考文献库与文档同步</li>
+    <li><strong>Apple iCloud / CloudKit</strong> — 可选备份，由您的 Apple ID 管理</li>
+    <li><strong>Sentry</strong> — 崩溃与错误报告</li>
+    <li><strong>TelemetryDeck</strong> — 匿名产品分析</li>
+    <li><strong>Apple StoreKit</strong> — 购买与订阅</li>
+  </ul>
+  <p>上述各项均受其各自隐私政策约束，我们建议您查阅。</p>
+
+  <h2>数据保留与删除</h2>
+  <p>
+    您的文档、批注和手写内容会保留在设备上，直到您删除它们或删除应用。若已启用 iCloud 备份，可在 Rectoly 的设置中关闭，或在设备的&quot;设置&quot;应用中删除该应用的 iCloud 数据。断开 Mendeley 或 Zotero 账户会立即移除本地存储的访问令牌或 API 密钥。
+  </p>
+
+  <h2>儿童隐私</h2>
+  <p>Rectoly 不面向 13 岁以下儿童，我们也不会故意收集他们的信息。</p>
+
+  <h2>本政策的变更</h2>
+  <p>我们可能随应用变更而更新本政策。重大变更将在此以更新日期体现。</p>
+
+  <h2>联系方式</h2>
+  <p>有关本政策的问题： <a href="mailto:rectoly.app@gmail.com">rectoly.app@gmail.com</a></p>
+
+  <footer>Rectoly 由 Hawk Eye 开发。</footer>
+</main>
+</body>
+</html>

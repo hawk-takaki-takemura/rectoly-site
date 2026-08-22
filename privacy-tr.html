@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rectoly — Gizlilik Politikası</title>
+<style>
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5b5b63;
+    --accent: #2f6fed;
+    --card: #f4f5f7;
+    --border: #e2e3e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #f1f1f3;
+      --muted: #a3a3ab;
+      --accent: #6ea1ff;
+      --card: #1c1c1f;
+      --border: #2c2c31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin: 0 0 32px;
+    padding: 12px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.88rem;
+  }
+  .langs .label {
+    width: 100%;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+  .langs a[aria-current="page"] {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rectoly — Gizlilik Politikası</h1>
+  <p class="updated">Son güncelleme: 19 Ağustos 2026</p>
+  <nav class="langs" aria-label="Diller">
+  <div class="label">Diller</div>
+  <a href="privacy-en.html">English</a>
+  <a href="privacy-ja.html">日本語</a>
+  <a href="privacy-de.html">Deutsch</a>
+  <a href="privacy-es.html">Español</a>
+  <a href="privacy-zh-Hans.html">中文（简体）</a>
+  <a href="privacy-zh-Hant.html">中文（繁體）</a>
+  <a href="privacy-fr.html">Français</a>
+  <a href="privacy-it.html">Italiano</a>
+  <a href="privacy-da.html">Dansk</a>
+  <a href="privacy-ko.html">한국어</a>
+  <a href="privacy-pt-BR.html">Português (Brasil)</a>
+  <a href="privacy-nl.html">Nederlands</a>
+  <a href="privacy-sv.html">Svenska</a>
+  <a href="privacy-nb.html">Norsk Bokmål</a>
+  <a href="privacy-pl.html">Polski</a>
+  <a href="privacy-ru.html">Русский</a>
+  <a href="privacy-ar.html">العربية</a>
+  <a href="privacy-tr.html" aria-current="page">Türkçe</a>
+  <a href="privacy-hi.html">हिन्दी</a>
+  <a href="privacy-id.html">Bahasa Indonesia</a>
+</nav>
+
+  <p>
+    Hawk Eye (&quot;biz&quot;) Mendeley Reference Manager ve Zotero gibi referans yöneticileriyle akademik PDF&#x27;leri okumak, ek açıklama eklemek ve senkronize etmek için bir iPad uygulaması olan Rectoly&#x27;yi geliştirir. Bu politika, Rectoly&#x27;nin hangi bilgileri topladığını, neden ve nasıl işlediğini açıklar.
+  </p>
+
+  <h2>Topladığımız bilgiler</h2>
+
+  <p><strong>Mendeley hesabı bağlantınız.</strong> Mendeley ile oturum açtığınızda Rectoly, kitaplığınızı, belgelerinizi ve ek açıklamalarınızı okumak ve senkronize etmek için bir OAuth erişim jetonu ister. Bu jeton cihazınızın Keychain&#x27;inde saklanır ve sunucularımıza asla gönderilmez — Rectoly doğrudan Mendeley&#x27;in kendi API&#x27;siyle iletişim kurar.</p>
+
+  <p><strong>Zotero hesabı bağlantınız.</strong> Zotero ile oturum açtığınızda Rectoly, kitaplığınızı, belgelerinizi ve ek açıklamalarınızı okumak ve senkronize etmek için bir Zotero API anahtarı ister. Bu anahtar cihazınızın Keychain&#x27;inde saklanır ve sunucularımıza asla gönderilmez — Rectoly doğrudan Zotero&#x27;nun kendi API&#x27;siyle iletişim kurar.</p>
+
+  <p><strong>Belgeleriniz ve ek açıklamalarınız.</strong> Açtığınız PDF&#x27;ler ile vurgular, altı çizgiler, yapışkan notlar ve eklediğiniz el yazısı mürekkep cihazınızda saklanır. iCloud yedeklemesini etkinleştirirseniz bu veriler — ve ayrı olarak katılmayı seçerseniz el yazınız — Apple&#x27;ın CloudKit&#x27;i aracılığıyla kendi iCloud hesabınıza yedeklenir. Bu verilere erişimimiz yoktur; veriler şifrelenir ve Apple ID&#x27;nize bağlıdır.</p>
+
+  <p><strong>Çökme ve hata raporları.</strong> Rectoly, hataları düzeltebilmemiz için çökme ve hataları otomatik olarak bildirmek üzere Sentry kullanır. Bu raporlar kişisel bilgileri hariç tutacak şekilde yapılandırılmıştır: varsayılan bir kullanıcı tanımlayıcısı veya IP adresi toplanmaz; belge başlıkları, dosya yolları, e-posta adresleri, kimlik doğrulama jetonları ve ek açıklama metni rapor gönderilmeden önce çıkarılır.</p>
+
+  <p><strong>Anonim kullanım analitikleri.</strong> Rectoly, anonim ve toplu kullanım sinyalleri toplamak için TelemetryDeck kullanır — örneğin hangi ekranların açıldığı, başlangıç rehberinin tamamlanıp tamamlanmadığı veya bir senkronizasyonun başarılı mı yoksa başarısız mı olduğu (genel bir neden kategorisi olarak; ham hata metni değil). Bu sinyaller asla belge başlıkları, dosya yolları, e-posta adresleri veya ek açıklama içeriği içermez ve kimliğinize bağlı değildir.</p>
+
+  <p><strong>Satın almalar.</strong> Abonelikler ve tek seferlik satın almalar tamamen Apple tarafından StoreKit aracılığıyla işlenir. Bir satın almanın yapıldığına dair onay alırız; Rectoly ödeme bilgilerinizi toplamaz veya saklamaz. Bu veriler Apple&#x27;ın kendi gizlilik politikasına tabidir.</p>
+
+  <h2>Yapmadıklarımız</h2>
+  <ul>
+    <li>Verilerinizi satmayız.</li>
+    <li>Reklam veya reklam izleme SDK&#x27;ları çalıştırmayız.</li>
+    <li>Belgelerinizin veya ek açıklamalarınızın içeriğini kendimiz okumayız — bunlar cihazınızda ve etkinleştirirseniz kendi iCloud hesabınızda kalır.</li>
+  </ul>
+
+  <h2>Üçüncü taraf hizmetler</h2>
+  <ul>
+    <li><strong>Mendeley (Elsevier)</strong> — referans kitaplığınız ve belge senkronizasyonu</li>
+    <li><strong>Zotero (Corporation for Digital Scholarship)</strong> — referans kitaplığınız ve belge senkronizasyonu</li>
+    <li><strong>Apple iCloud / CloudKit</strong> — isteğe bağlı yedekleme, Apple ID&#x27;nizle yönetilir</li>
+    <li><strong>Sentry</strong> — çökme ve hata raporlama</li>
+    <li><strong>TelemetryDeck</strong> — anonim ürün analitikleri</li>
+    <li><strong>Apple StoreKit</strong> — satın almalar ve abonelikler</li>
+  </ul>
+  <p>Bunların her biri kendi gizlilik politikası kapsamında çalışır; incelemenizi öneririz.</p>
+
+  <h2>Veri saklama ve silme</h2>
+  <p>
+    Belgeleriniz, ek açıklamalarınız ve el yazınız, bunları silene veya uygulamayı silene kadar cihazınızda kalır. iCloud yedeklemesi etkinse Rectoly ayarlarından kapatabilir veya cihazınızın Ayarlar uygulamasından uygulamanın iCloud verilerini kaldırabilirsiniz. Mendeley veya Zotero hesabınızın bağlantısını kesmek, yerel olarak saklanan erişim jetonunu veya API anahtarını hemen kaldırır.
+  </p>
+
+  <h2>Çocukların gizliliği</h2>
+  <p>Rectoly 13 yaşın altındaki çocuklara yönelik değildir ve bilerek onlardan bilgi toplamayız.</p>
+
+  <h2>Bu politikadaki değişiklikler</h2>
+  <p>Uygulama değiştikçe bu politikayı güncelleyebiliriz. Önemli değişiklikler burada güncellenmiş bir tarihle yansıtılır.</p>
+
+  <h2>İletişim</h2>
+  <p>Bu politika hakkında sorular: <a href="mailto:rectoly.app@gmail.com">rectoly.app@gmail.com</a></p>
+
+  <footer>Rectoly, Hawk Eye tarafından geliştirilmektedir.</footer>
+</main>
+</body>
+</html>

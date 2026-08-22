@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="id" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rectoly — Kebijakan Privasi</title>
+<style>
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5b5b63;
+    --accent: #2f6fed;
+    --card: #f4f5f7;
+    --border: #e2e3e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #f1f1f3;
+      --muted: #a3a3ab;
+      --accent: #6ea1ff;
+      --card: #1c1c1f;
+      --border: #2c2c31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  .langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin: 0 0 32px;
+    padding: 12px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.88rem;
+  }
+  .langs .label {
+    width: 100%;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+  .langs a[aria-current="page"] {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rectoly — Kebijakan Privasi</h1>
+  <p class="updated">Terakhir diperbarui 19 Agustus 2026</p>
+  <nav class="langs" aria-label="Bahasa">
+  <div class="label">Bahasa</div>
+  <a href="privacy-en.html">English</a>
+  <a href="privacy-ja.html">日本語</a>
+  <a href="privacy-de.html">Deutsch</a>
+  <a href="privacy-es.html">Español</a>
+  <a href="privacy-zh-Hans.html">中文（简体）</a>
+  <a href="privacy-zh-Hant.html">中文（繁體）</a>
+  <a href="privacy-fr.html">Français</a>
+  <a href="privacy-it.html">Italiano</a>
+  <a href="privacy-da.html">Dansk</a>
+  <a href="privacy-ko.html">한국어</a>
+  <a href="privacy-pt-BR.html">Português (Brasil)</a>
+  <a href="privacy-nl.html">Nederlands</a>
+  <a href="privacy-sv.html">Svenska</a>
+  <a href="privacy-nb.html">Norsk Bokmål</a>
+  <a href="privacy-pl.html">Polski</a>
+  <a href="privacy-ru.html">Русский</a>
+  <a href="privacy-ar.html">العربية</a>
+  <a href="privacy-tr.html">Türkçe</a>
+  <a href="privacy-hi.html">हिन्दी</a>
+  <a href="privacy-id.html" aria-current="page">Bahasa Indonesia</a>
+</nav>
+
+  <p>
+    Hawk Eye (&quot;kami&quot;) mengembangkan Rectoly, aplikasi iPad untuk membaca, menganotasi, dan menyinkronkan PDF akademik dengan pengelola referensi seperti Mendeley Reference Manager dan Zotero. Kebijakan ini menjelaskan informasi apa yang dikumpulkan Rectoly, mengapa, dan bagaimana penanganannya.
+  </p>
+
+  <h2>Informasi yang kami kumpulkan</h2>
+
+  <p><strong>Koneksi akun Mendeley Anda.</strong> Saat Anda masuk dengan Mendeley, Rectoly meminta token akses OAuth untuk membaca dan menyinkronkan pustaka, dokumen, dan anotasi Anda. Token ini disimpan di Keychain perangkat Anda dan tidak pernah dikirim ke server kami — Rectoly berkomunikasi langsung dengan API milik Mendeley.</p>
+
+  <p><strong>Koneksi akun Zotero Anda.</strong> Saat Anda masuk dengan Zotero, Rectoly meminta kunci API Zotero untuk membaca dan menyinkronkan pustaka, dokumen, dan anotasi Anda. Kunci ini disimpan di Keychain perangkat Anda dan tidak pernah dikirim ke server kami — Rectoly berkomunikasi langsung dengan API milik Zotero.</p>
+
+  <p><strong>Dokumen dan anotasi Anda.</strong> PDF yang Anda buka, beserta sorotan, garis bawah, catatan tempel, dan tinta tulisan tangan yang Anda tambahkan, disimpan di perangkat Anda. Jika Anda mengaktifkan cadangan iCloud, data ini — dan, jika Anda ikut serta secara terpisah, tulisan tangan Anda — dicadangkan ke akun iCloud Anda sendiri melalui CloudKit milik Apple. Kami tidak memiliki akses ke data ini; data dienkripsi dan dibatasi pada Apple ID Anda.</p>
+
+  <p><strong>Laporan kerusakan dan kesalahan.</strong> Rectoly menggunakan Sentry untuk secara otomatis melaporkan kerusakan dan kesalahan agar kami dapat memperbaiki bug. Laporan ini dikonfigurasi untuk mengecualikan informasi pribadi: tidak ada pengenal pengguna default atau alamat IP yang dikumpulkan, dan judul dokumen, jalur file, alamat email, token autentikasi, serta teks anotasi dihapus sebelum laporan dikirim.</p>
+
+  <p><strong>Analitik penggunaan anonim.</strong> Rectoly menggunakan TelemetryDeck untuk mengumpulkan sinyal penggunaan anonim dan teragregasi — misalnya, layar mana yang dibuka, apakah onboarding selesai, atau apakah sinkronisasi berhasil atau gagal (sebagai kategori alasan umum, bukan teks kesalahan mentah). Sinyal ini tidak pernah mencakup judul dokumen, jalur file, alamat email, atau konten anotasi, dan tidak terikat pada identitas Anda.</p>
+
+  <p><strong>Pembelian.</strong> Langganan dan pembelian satu kali ditangani sepenuhnya oleh Apple melalui StoreKit. Kami menerima konfirmasi bahwa pembelian telah dilakukan; Rectoly tidak mengumpulkan atau menyimpan detail pembayaran Anda. Kebijakan privasi Apple sendiri mengatur data tersebut.</p>
+
+  <h2>Yang tidak kami lakukan</h2>
+  <ul>
+    <li>Kami tidak menjual data Anda.</li>
+    <li>Kami tidak menjalankan iklan atau SDK pelacakan iklan.</li>
+    <li>Kami tidak membaca sendiri konten dokumen atau anotasi Anda — data itu tetap di perangkat Anda dan, jika Anda mengaktifkannya, di akun iCloud Anda sendiri.</li>
+  </ul>
+
+  <h2>Layanan pihak ketiga</h2>
+  <ul>
+    <li><strong>Mendeley (Elsevier)</strong> — pustaka referensi dan sinkronisasi dokumen Anda</li>
+    <li><strong>Zotero (Corporation for Digital Scholarship)</strong> — pustaka referensi dan sinkronisasi dokumen Anda</li>
+    <li><strong>Apple iCloud / CloudKit</strong> — cadangan opsional, diatur oleh Apple ID Anda</li>
+    <li><strong>Sentry</strong> — pelaporan kerusakan dan kesalahan</li>
+    <li><strong>TelemetryDeck</strong> — analitik produk anonim</li>
+    <li><strong>Apple StoreKit</strong> — pembelian dan langganan</li>
+  </ul>
+  <p>Masing-masing beroperasi berdasarkan kebijakan privasinya sendiri, yang kami sarankan Anda tinjau.</p>
+
+  <h2>Retensi dan penghapusan data</h2>
+  <p>
+    Dokumen, anotasi, dan tulisan tangan Anda tetap di perangkat hingga Anda menghapusnya atau menghapus aplikasi. Jika cadangan iCloud diaktifkan, Anda dapat mematikannya di pengaturan Rectoly, atau menghapus data iCloud aplikasi dari aplikasi Pengaturan perangkat. Memutuskan akun Mendeley atau Zotero segera menghapus token akses atau kunci API yang tersimpan secara lokal.
+  </p>
+
+  <h2>Privasi anak</h2>
+  <p>Rectoly tidak ditujukan untuk anak di bawah 13 tahun, dan kami tidak dengan sengaja mengumpulkan informasi dari mereka.</p>
+
+  <h2>Perubahan kebijakan ini</h2>
+  <p>Kami dapat memperbarui kebijakan ini seiring perubahan aplikasi. Perubahan material akan tercermin di sini dengan tanggal yang diperbarui.</p>
+
+  <h2>Kontak</h2>
+  <p>Pertanyaan tentang kebijakan ini: <a href="mailto:rectoly.app@gmail.com">rectoly.app@gmail.com</a></p>
+
+  <footer>Rectoly dikembangkan oleh Hawk Eye.</footer>
+</main>
+</body>
+</html>
